@@ -16,7 +16,7 @@
         },
         methods: {
             onClick() {
-                console.log(this.text, this.color)
+                this.$emit('btn-click')
             }
         }
     }

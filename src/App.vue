@@ -1,18 +1,39 @@
 <template>
   <div class="container">
-    <Header title="Task Tracker" />
+
+    <Header
+      @toggle-add-task="toggleAddTask"
+      title="Task Tracker"
+      :showAddTask="showAddTask"
+    />
+
+    <router-view :showAddTask="showAddTask"></router-view>
+
+    <Footer />
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
+  import Header from './components/Header.vue'
+  import Footer from './components/Footer.vue'
 
-export default {
-  name: 'App',
-  components: {
-    Header
+  export default {
+      name: 'App',
+      components: {
+      Header,
+      Footer,
+  },
+    data() {
+      return {
+        showAddTask: false
+      }
+    },
+    methods: {
+      toggleAddTask() {
+        this.showAddTask = !this.showAddTask
+      }
+    }
   }
-}
 </script>
 
 <style>
@@ -57,4 +78,4 @@ export default {
     display: block;
     width: 100%;
   }
-  </style>
+</style>

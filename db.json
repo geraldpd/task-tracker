@@ -1,0 +1,34 @@
+{
+  "tasks": [
+    {
+      "id": 2,
+      "text": "Create Apps using Vue js on your Own",
+      "day": "January 1 2021",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "Try Upwork",
+      "day": "January 1 2022",
+      "reminder": true
+    },
+    {
+      "id": 4,
+      "text": "Earn from upwork, make macbook pay for its own",
+      "day": "January 1 2022",
+      "reminder": false
+    },
+    {
+      "text": "test",
+      "day": "september 1 2022",
+      "reminder": true,
+      "id": 5
+    },
+    {
+      "text": "test",
+      "day": "test",
+      "reminder": true,
+      "id": 6
+    }
+  ]
+}
